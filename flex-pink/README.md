@@ -74,3 +74,89 @@ section div:nth-child(3) {
 }
 ```
 
+# 常用初始化样式
+  + body
+```
+body {
+    max-width: 540px;
+    min-width: 320px;
+    margin: 0 auto;
+    font: normal 14px/1.5 Tahoma, "Lucida Grande", Verdana, "Microsoft Yahei", STXihei, hei;
+    color: #000;
+    background: #f2f2f2;
+    overflow-x: hidden;
+    -webkit-tap-highlight-color: transparent;
+}
+```
+
+# 顶部固定搜索框样式
+```
+.search-index {
+    /* 固定定位和父元素无关,以屏幕为准 */
+    /* 因此需要限制固定定位的宽 */
+    position: fixed;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 540px;
+    min-width: 320px;
+    height: 44px;
+    background-color: pink;
+}
+```
+
+
+
+
+
+# 将一个元素改为绝对定位
+  - 其内部的margin属性将失效
+  - 其父元素的position应改为positive
+  - 伪类元素(.search::before)的父节点是.search
+
+# 让元素在y轴方向垂直
+  - 如果是css3的和盒模型
+  - 比如高度为26px,上下变框宽度各为1px.
+  - 应设置line-height:24px
+  - 如果是之前的盒模型应让 height = line-height
+
+
+# 指定图片为背景
+  - 不偏移
+```
+background: url('../images/hotel.png') no-repeat 0 0;
+```
+  - 靠底端对齐,水平居中
+```
+background: url('../images/hotel.png') no-repeat bottom center;
+```
+
+# 背景的线性渐变
+  - 语法(需要带浏览器的私有前缀)
+```
+background: linear-gradient (起始方向, 颜色1, 颜色2, ...);
+```
+  -从左边开始,由红变蓝
+```
+background: -webkit-linear-gradient(left, red, blue);
+```
+  - 从左上开始,由红变蓝
+```
+background: -webkit-linear-gradient(left top,red, blue);
+```
+
+# 三角箭头的制作:
+  - 显示一个正方形的上边框和右边框
+  - 使用transform旋转45度
+```
+.more::after{
+  width:7px;
+  height:7px;
+  border-top:2px solid #fff;
+  border-right: 2px solid #fff;
+  transform: routate(45deg);
+}
+```
+#
