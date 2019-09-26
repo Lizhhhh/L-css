@@ -33,14 +33,44 @@
     + stretch:拉伸(默认值,子元素不指定高度时,子元素和父元素高度一样)
   - flex-flow: 符合属性,相当于同时设置了flex-direction 和 flex-wrap
 
-# 使用flex让div元素垂直居中
+
+# flex布局子项常用属性
+  + flex子项目占的份数
+    + flex:1
+  + align-self子项自己控制在侧轴的排列方式
+    + 操作局部的子盒子
+  + order属性定义子项的先后顺序
+    + 数字越小,排列越靠前
+    + 默认是0
+
+
+# 圣杯布局
+  + 左右固定宽度,中间自适应
+  + div:nth-child(1)
 ```
-div{
-  display:flex;
-  justify-content:center;
-  align-items:center;
+section {
+  display: flex;
+  width: 60%;
+  height: 150px;
+  background-color: pink;
+  margin: 0 auto;
 }
-div span{
-  ...
+
+section div:nth-child(1) {
+  width: 100px;
+  height: 150px;
+  background-color: red;
+}
+
+section div:nth-child(2) {
+  flex: 1;
+  background-color: green;
+}
+
+section div:nth-child(3) {
+  width: 100px;
+  height: 150px;
+  background-color: blue;
 }
 ```
+
