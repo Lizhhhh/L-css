@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalaable=no, maximum-scale=1.0,minimum-scale =1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- 引入css的初始化文件 -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+
+    <title>栗子 - 流式布局</title>
+</head>
+
+<body>
+    <!-- 顶部 -->
+    <header class="app">
+        <ul>
+            <li>
+                <img src="images/close.png" alt="" />
+            </li>
+            <li>
+                <img src="images/logo.png" alt="" />
+            </li>
+            <li>打开京东App，购物更轻松</li>
+            <li>立即打开</li>
+        </ul>
+    </header>
+    <!-- 搜索 -->
+    <div class="search-wrap">
+        <div class="search-btn"></div>
+        <div class="search">
+            <div class="jd-icon"></div>
+            <div class="sou"></div>
+        </div>
+        <div class="search-login">登录</div>
+    </div>
+    <!-- 主题内容部分 -->
+    <div class="main-content">
+        <!-- 滑动图 -->
+        <div class="slider">
+            <!-- <img src="upload/banner.jpg.dpg" alt=""> -->
+        </div>
+        <!-- 轮播图 -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="upload/swiper1.dpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="upload/swiper2.dpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="upload/swiper3.dpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="upload/swiper4.dpg" alt="">
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <!-- nav部分 -->
+        <nav>
+            <a href="">
+                <img src="upload/nav1.webp" alt="">
+                <span>京东超市</span>
+            </a>
+            <a href="">
+                <img src="upload/nav2.webp" alt="">
+                <span>数码电器</span>
+            </a>
+            <a href="">
+                <img src="upload/nav3.webp" alt="">
+                <span>京东服饰</span>
+            </a>
+            <a href="">
+                <img src="upload/nav4.webp" alt="">
+                <span>京东生鲜</span>
+            </a>
+            <a href="">
+                <img src="upload/nav5.webp" alt="">
+                <span>京东到家</span>
+            </a>
+            <a href="">
+                <img src="upload/nav6.webp" alt="">
+                <span>充值缴费</span>
+            </a>
+            <a href="">
+                <img src="upload/nav7.webp" alt="">
+                <span>9.9元拼</span>
+            </a>
+            <a href="">
+                <img src="upload/nav8.webp" alt="">
+                <span>领券</span>
+            </a>
+            <a href="">
+                <img src="upload/nav9.webp" alt="">
+                <span>赚钱</span>
+            </a>
+            <a href="">
+                <img src="upload/nav10.webp" alt="">
+                <span>PLUS会员</span>
+            </a>
+
+        </nav>
+
+        <!-- 新闻模块 -->
+        <div class="news">
+            <a href="#">
+                <img src="upload/new1.dpg" alt="" />
+            </a>
+            <a href="#">
+                <img src="upload/new2.dpg" alt="" />
+            </a>
+        </div>
+
+    </div>
+    <script src="js/swiper.min.js"></script>
+    <script>
+        var mySwiper = new Swiper('.swiper-container', {
+            direction: 'horizontal', // 垂直切换选项
+            loop: true, // 循环模式选项
+
+            // 如果需要分页器
+            pagination: {
+                el: '.swiper-pagination',
+            },
+        })
+    </script>
+</body>
+
+</html>
