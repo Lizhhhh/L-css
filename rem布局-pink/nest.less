@@ -1,0 +1,20 @@
+.header {
+    width: 200px;
+    height: 200px;
+    background-color: pink;
+
+    // 1. less嵌套:子元素直接写在父元素里面
+    a {
+        color: red;
+
+        &:hover {
+            color: blue;
+        }
+    }
+}
+
+.nav {
+    .logo {
+        color: green;
+    }
+}

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <title>栗子 --- rem实战 </title>
+</head>
+
+<body>
+    <!-- 顶部搜索框 -->
+    <div class="search-content">
+        <a href="#" class="classify"></a>
+        <i class="search-icon"></i>
+        <div class="search">
+            <form action="">
+                <input type="text" class="search" value="商品/店铺">
+            </form>
+        </div>
+        <a href="#" class="login">登录</a>
+    </div>
+    <!-- banner部分 -->
+    <div class="banner swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="images/bg1.jpg">
+            </div>
+            <div class="swiper-slide">
+                <img src="images/bg2.jpg">
+            </div>
+            <div class="swiper-slide">
+                <img src="images/bg3.png">
+            </div>
+            <div class="swiper-slide">
+                <img src="images/bg4.png">
+            </div>
+            <div class="swiper-slide">
+                <img src="images/bg5.png">
+            </div>
+        </div>
+    </div>
+
+    <!-- nav模块 -->
+    <nav>
+        <a href="#">
+            <img src="upload/nav1.webp">
+            <div class="title">
+                爆款手机
+            </div>
+        </a>
+        <a href="#">
+            <img src="upload/nav2.webp">
+            <div class="title">
+                苏宁超市
+            </div>
+        </a>
+        <a href="#">
+            <img src="upload/nav3.webp">
+            <div class="title">
+                生活家电
+            </div>
+        </a>
+        <a href="#">
+            <img src="upload/nav4.webp">
+            <div class="title">
+                苏宁生鲜
+            </div>
+        </a>
+        <a href="#">
+            <img src="upload/nav5.webp">
+            <div class="title">
+                母婴玩具
+            </div>
+        </a>
+        <a href="#">
+            <img src="upload/nav6.webp">
+            <div class="title">
+                限时抢购
+            </div>
+        </a>
+        <a href="#">
+            <img src="upload/nav7.webp">
+            <div class="title">
+                赚钱
+            </div>
+        </a>
+        <a href="#">
+            <img src="upload/nav8.webp">
+            <div class="title">
+                苏宁拼购
+            </div>
+        </a>
+        <a href="#">
+            <img src="upload/nav9.webp">
+            <div class="title">
+                苏宁家电
+            </div>
+        </a>
+        <a href="#">
+            <img src="upload/nav10.webp">
+            <div class="title">
+                签到有礼
+            </div>
+        </a>
+
+    </nav>
+
+    <!-- ad -->
+    <div class="ad">
+        <a href="#"><img src="upload/ad1.png" alt=""></a>
+        <a href="#"><img src="upload/ad2.png" alt=""></a>
+    </div>
+
+
+    <script src="js/swiper.min.js"></script>
+    <script>
+        const mySwiper = new Swiper('.swiper-container', {
+            autoplay: true,
+            loop: true
+        })
+    </script>
+</body>
+
+</html>

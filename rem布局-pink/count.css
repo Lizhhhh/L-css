@@ -1,0 +1,11 @@
+div {
+  box-sizing: border-box;
+  width: 150px;
+  height: 500px;
+  border: 5px solid red;
+  background-color: #666666;
+}
+img {
+  height: 1.64rem;
+  width: 1.64rem;
+}
